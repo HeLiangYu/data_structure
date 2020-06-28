@@ -25,6 +25,23 @@ function LinkList() {
   let head = null;
   let tail = null;
 
+  // 根据索引获取节点
+  function getNode(index) {
+    // let _index = 0;
+    const curr_node = head;
+    // while (_index < index - 1) {
+    //   curr_node = curr_node.next;
+    //   _index++;
+    // }
+
+    while (index > 0) {
+      curr_node = curr_node.next;
+      index--;
+    }
+
+    return curr_node;
+  }
+
   // 添加新节点
   this.append = function (data) {
     // 创建新节点
