@@ -1,3 +1,5 @@
+exports.Stack = Stack;
+
 function Stack() {
   const _items = [];
 
@@ -24,6 +26,15 @@ function Stack() {
   // 清空栈
   this.clear = function () {
     _items = [];
+  };
+
+  // 栈的大小
+  this.size = function () {
+    return _items.length;
+  };
+
+  this.str = function () {
+    console.log(_items);
   };
 }
 

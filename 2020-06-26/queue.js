@@ -1,3 +1,5 @@
+exports.Queue = Queue;
+
 function Queue(arr = []) {
   const _items = arr;
 
@@ -192,4 +194,4 @@ function triangle2(n = 1) {
     console.log(line);
   }
 }
-triangle2(8);
+// triangle2(8);
